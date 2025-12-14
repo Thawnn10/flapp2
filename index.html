@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flappy Bird: Phân Tích & Trải Nghiệm</title>
+    <title>Flappy Bird của Thawn</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -22,21 +22,6 @@
             touch-action: none;
         }
     </style>
-    <!-- Chosen Palette: Warm Neutrals & Calming Blues (Tailwind: Slate, Blue, Amber) -->
-    <!-- Application Structure Plan:
-         1. Header: Giới thiệu và mục tiêu ứng dụng.
-         2. Game Section (The Source): Khu vực tương tác chính nơi dữ liệu (điểm số) được tạo ra.
-         3. Analytics Dashboard (The Report): Khu vực hiển thị dữ liệu định lượng (Biểu đồ lịch sử điểm, Thống kê trung bình) sử dụng Chart.js.
-         4. Insights & Physics (Qualitative): Giải thích cơ chế vật lý và hướng dẫn.
-         Structure chosen to create a feedback loop: Play -> Generate Data -> Analyze -> Improve.
-    -->
-    <!-- Visualization & Content Choices:
-         1. Game Canvas: Goal: Generate Data/Entertainment. Method: HTML5 Canvas (No SVG). Interaction: Tap/Click to jump.
-         2. Score History Chart: Goal: Compare performance over time. Method: Chart.js Line Chart. Interaction: Auto-update on Game Over.
-         3. Key Metrics Cards: Goal: Inform instant stats (Max, Avg). Method: HTML/JS DOM updates.
-         4. Physics Explanation: Goal: Educate. Method: Static HTML text blocks.
-    -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 </head>
 <body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
 
@@ -45,7 +30,7 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-5xl">
             <div class="flex items-center gap-2">
                 <div class="w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center font-bold text-white">F</div>
-                <h1 class="text-xl font-bold text-slate-700 tracking-tight">Flappy Analytics</h1>
+                <h1 class="text-xl font-bold text-slate-700 tracking-tight">TaQuangThanhA1K64</h1>
             </div>
             <nav class="hidden sm:flex gap-4 text-sm font-medium text-slate-500">
                 <a href="#game-section" class="hover:text-blue-600 transition-colors">Trò chơi</a>
@@ -59,11 +44,10 @@
 
         <!-- Introduction -->
         <section class="text-center max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold text-slate-800 mb-3">Mô Phỏng & Thu Thập Dữ Liệu</h2>
+            <h2 class="text-3xl font-bold text-slate-800 mb-3">Flappy bird</h2>
             <p class="text-slate-600 leading-relaxed">
-                Ứng dụng này không chỉ là một trò chơi. Đây là một môi trường thí nghiệm tương tác.
-                Mỗi lần bạn chơi ("Run"), dữ liệu về hiệu suất của bạn sẽ được ghi lại và phân tích theo thời gian thực.
-                Hãy sử dụng dữ liệu này để cải thiện phản xạ và chiến lược của bạn.
+                - i luv u so much -
+
             </p>
         </section>
 
@@ -160,7 +144,7 @@
                         Trọng Lực (Gravity)
                     </h4>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        Nhân vật chịu tác động của gia tốc trọng trường không đổi `0.25px/frame^2`. Điều này đòi hỏi người chơi phải duy trì nhịp điệu nhấp chuột đều đặn để chống lại xu hướng rơi tự do.
+                       
                     </p>
                 </div>
                 <div class="space-y-2">
@@ -169,7 +153,6 @@
                         Vận Tốc (Velocity)
                     </h4>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        Mỗi lần nhảy tạo ra một xung lực tức thời `-4.5px/frame`. Việc quản lý vận tốc là chìa khóa: nhảy quá sớm sẽ chạm trần, quá muộn sẽ chạm đất.
                     </p>
                 </div>
                 <div class="space-y-2">
@@ -178,7 +161,6 @@
                         Phát Hiện Va Chạm
                     </h4>
                     <p class="text-sm text-slate-600 leading-relaxed">
-                        Hệ thống sử dụng mô hình AABB (Axis-Aligned Bounding Box) để kiểm tra va chạm giữa nhân vật và các cột chướng ngại vật với biên độ an toàn là 1px.
                     </p>
                 </div>
             </div>
@@ -188,8 +170,8 @@
 
     <footer class="bg-white border-t border-slate-200 py-8 mt-auto">
         <div class="container mx-auto px-4 text-center text-slate-400 text-sm">
-            <p>&copy; 2025 Flappy Analytics Experiment. Generated via AI.</p>
-            <p class="mt-2 text-xs">Phát triển với HTML5 Canvas, Tailwind CSS & Chart.js.</p>
+            <p>&copy; 2025 - TaQuangThanh -</p>
+            <p class="mt-2 text-xs">TaQanThawn</p>
         </div>
     </footer>
 
@@ -550,4 +532,5 @@
         initChart();
     </script>
 </body>
+
 </html>
